@@ -1,0 +1,12 @@
+{
+  "key.callablehorse": "召之马来 Fabric",
+
+  "key.setHorse.callablehorse": "绑定坐骑",
+  "key.callHorse.callablehorse": "召唤坐骑",
+
+  "no_horse_can_call.callablehorse.info": "你没有马。",
+  "success_call_house.callablehorse.info": "已召唤马。",
+  "horse_cannot_call.callablehorse.info": "你马已死或处于范围之外。",
+  "no_horse_can_set.callablehorse.info": "无马可定。",
+  "success_set_house.callablehorse.info": "已绑定马。"
+}
