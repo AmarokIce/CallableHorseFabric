@@ -1,0 +1,12 @@
+{
+  "key.callablehorse": "Callable Horse Fabric",
+
+  "key.setHorse.callablehorse": "Set Horse",
+  "key.callHorse.callablehorse": "Call Horse",
+
+  "no_horse_can_call.callablehorse.info": "You have no horse.",
+  "success_call_house.callablehorse.info": "Success call your horse.",
+  "horse_cannot_call.callablehorse.info": "Your horse is dead or not in range can call.",
+  "no_horse_can_set.callablehorse.info": "No horse can set.",
+  "success_set_house.callablehorse.info": "Success set horse."
+}
