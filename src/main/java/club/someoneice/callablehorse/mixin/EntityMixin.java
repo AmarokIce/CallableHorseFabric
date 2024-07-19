@@ -23,27 +23,27 @@ public abstract class EntityMixin implements IDataSaveHelper {
     @Shadow public abstract void remove(Entity.RemovalReason reason);
 
     @Unique
-    private CompoundTag callableHorseEntityDataTag;
+    private CompoundTag callableHorse$EntityDataTag;
 
     @Override
     public CompoundTag getCompoundTag() {
-        this.callableHorseEntityDataTag = this.callableHorseEntityDataTag == null ? new CompoundTag() : callableHorseEntityDataTag;
-        return this.callableHorseEntityDataTag;
+        this.callableHorse$EntityDataTag = this.callableHorse$EntityDataTag == null ? new CompoundTag() : callableHorse$EntityDataTag;
+        return this.callableHorse$EntityDataTag;
     }
 
     @Override
     public void setCompoundTag(CompoundTag compoundTag) {
-        this.callableHorseEntityDataTag = compoundTag;
+        this.callableHorse$EntityDataTag = compoundTag;
     }
 
     @Inject(method = "addAdditionalSaveData", at = @At("TAIL"))
     public void onSaveNBT(CompoundTag compound, CallbackInfo info) {
-        if (callableHorseEntityDataTag != null) compound.put(WorldHorseData.KEY, callableHorseEntityDataTag);
+        if (callableHorse$EntityDataTag != null) compound.put(WorldHorseData.KEY, callableHorse$EntityDataTag);
     }
 
     @Inject(method = "readAdditionalSaveData", at = @At("TAIL"))
     public void onLoadNBT(CompoundTag compound, CallbackInfo info) {
-        callableHorseEntityDataTag = compound.contains(WorldHorseData.KEY) ? compound.getCompound(WorldHorseData.KEY) : new CompoundTag();
+        callableHorse$EntityDataTag = compound.contains(WorldHorseData.KEY) ? compound.getCompound(WorldHorseData.KEY) : new CompoundTag();
     }
 
     @Inject(method = "die", at = @At("HEAD"))
