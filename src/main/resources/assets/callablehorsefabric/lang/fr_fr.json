@@ -1,0 +1,12 @@
+{
+  "key.callablehorse": "Callable Horse Fabric",
+
+  "key.setHorse.callablehorse": "Définir le Cheval",
+  "key.callHorse.callablehorse": "Appeler le Cheval",
+
+  "no_horse_can_call.callablehorse.info": "Vous n'avez pas de cheval.",
+  "success_call_house.callablehorse.info": "Votre cheval a été appelé avec succès.",
+  "horse_cannot_call.callablehorse.info": "Votre cheval est mort ou hors de portée.",
+  "no_horse_can_set.callablehorse.info": "Aucun cheval à définir.",
+  "success_set_house.callablehorse.info": "Cheval défini avec succès."  
+}
